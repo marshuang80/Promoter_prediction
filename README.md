@@ -20,7 +20,9 @@ Using Convolutional Neural Networks to predict gene expression levels based on p
 This script requires Python 3.x and Tensorflow 1.x
 
 [Tensorflow for Mac](https://www.tensorflow.org/install/install_mac)
+
 [Tensorflow for Windows](https://www.tensorflow.org/install/install_windows)
+
 [Tensorflow for Ubuntu](https://www.tensorflow.org/install/install_linux)
 
 
@@ -32,16 +34,16 @@ python promoter_rpkm_prediction.py
 
 ## To generate data from scratch
 
-1) Run R code to get sequences from genome -> (**R_output**)
+1) Run R code to get sequences from genome -> (*R_output*)
 
-2) Use *processSequence.py* to trim sequence to defined promotmer length
+2) Use **processSequence.py** to trim sequence to defined promotmer length
 
-3) Copy gene names and normalized RPKM values to new csv file ->(**PRKM from zones paper**)
+3) Copy gene names and normalized RPKM values to new csv file ->(*PRKM from zones paper*)
 
-4) Run *matchSeqToRPKM.py*  to match **R_output** to **RPKM from Zones paper**
+4) Run **matchSeqToRPKM.py**  to match *R_output* to *RPKM from Zones paper*
 
 ```
 python matchSeqToRPKM RPKM_from_Zones_paper.csv
 ```
 
-5) One hot encode sequence with *onehot_encode2.py*
+5) One hot encode sequence with **onehot_encode2.py**
